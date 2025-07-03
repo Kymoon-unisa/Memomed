@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MemoMed Login</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        :root {
+          --primary-color: #0EA5E9;
+          --secondary-color: #F1F5F9;
+          --text-primary: #1E293B;
+          --text-secondary: #64748B;
+          --accent-red: #EF4444;
+        }
+        body {
+          font-family: 'Inter', sans-serif;
+          background-color: var(--secondary-color);
+          color: var(--text-primary);
+          min-height: 100dvh;
+          display: flex;
+          flex-direction: column;
+        }
+        .ios-statusbar {
+          background-color: var(--secondary-color);
+          padding: 8px 16px 4px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 20;
+          height: 44px;
+        }
+        .ios-statusbar-time {
+          font-size: 15px;
+          font-weight: 600;
+          color: var(--text-primary);
+        }
+        .ios-statusbar-indicators {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .ios-statusbar-indicators .material-icons {
+          font-size: 18px;
+          color: var(--text-primary);
+        }
+        .ios-statusbar-battery-text {
+          font-size: 13px;
+          font-weight: 500;
+          margin-left: -2px;
+          margin-right: 2px;
+          color: var(--text-primary);
+        }
+        .ios-navbar {
+          background-color: rgba(248, 248, 248, 0.82);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+          padding: 12px 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: fixed;
+          top: 44px;left: 0;
+          right: 0;
+          z-index: 10;
+          height: 56px;}
+        .ios-navbar-title {
+          font-size: 17px;
+          font-weight: 600;
+          color: var(--text-primary);
+        }
+        .ios-navbar-button {
+          color: var(--primary-color);
+          font-size: 17px;
+        }
+        .content-container {
+          padding-top: 100px;padding-bottom: 2rem;
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body>
+<div class="ios-statusbar">
+    <div class="ios-statusbar-time">9:41</div>
+    <div class="ios-statusbar-indicators">
+        <span class="material-icons">network_cell</span>
+        <span class="material-icons">wifi</span>
+        <span class="material-icons !text-[22px] transform -rotate-90">battery_full</span>
+    </div>
+</div>
+<nav class="ios-navbar">
+    <button class="ios-navbar-button">
+        <span class="material-icons">arrow_back_ios_new</span>
+    </button>
+    <h1 class="ios-navbar-title">MEMOMED</h1>
+    <button class="ios-navbar-button">
+        <span class="material-icons">more_horiz</span>
+    </button>
+</nav>
+<div class="content-container container mx-auto px-6 py-8 max-w-md flex flex-col flex-grow">
+    <header class="w-full text-center mb-10 mt-6">
+        <div class="w-28 h-28 bg-gradient-to-br from-sky-400 to-sky-600 rounded-3xl flex items-center justify-center mx-auto shadow-lg">
+            <span class="material-icons text-white text-6xl">medication</span>
+        </div>
+    </header>
+    <main class="w-full flex-grow flex flex-col justify-center">
+        <h2 class="text-4xl font-bold text-slate-800 mb-10 text-center">Bentornato!</h2>
+        <form class="space-y-6">
+            <div>
+                <label class="block text-sm font-medium text-slate-600 sr-only" for="email">Email</label>
+                <input class="mt-1 block w-full px-4 py-4 bg-white border border-slate-300 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 text-base" id="email" name="email" placeholder="Indirizzo Email" type="email"/>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-slate-600 sr-only" for="password">Password</label>
+                <input class="mt-1 block w-full px-4 py-4 bg-white border border-slate-300 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 text-base" id="password" name="password" placeholder="Password" type="password"/>
+            </div>
+            <div class="text-right">
+                <a class="text-sm font-medium text-sky-600 hover:text-sky-700" href="#">Password dimenticata?</a>
+            </div>
+            <div class="pt-6 space-y-4">
+                <button class="w-full justify-center py-4 px-4 border border-transparent rounded-xl shadow-md text-base font-semibold text-white bg-sky-500 hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-transform duration-150 ease-in-out active:scale-95" type="submit">
+                    ACCEDI
+                </button>
+                <button class="w-full justify-center py-4 px-4 border border-slate-300 rounded-xl shadow-md text-base font-semibold text-sky-600 bg-white hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-transform duration-150 ease-in-out active:scale-95" type="button">
+                    CREA UN ACCOUNT
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer class="w-full text-center mt-12 pb-4">
+        <p class="text-xs text-slate-500">
+            Continuando, accetti i nostri <a class="font-medium text-sky-600 hover:underline" href="#">Termini di Servizio</a> e <a class="font-medium text-sky-600 hover:underline" href="#">Informativa sulla Privacy</a>.
+        </p>
+    </footer>
+</div>
+
+
+<script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Evita il refresh
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+
+      if (email === "paziente@gmail.com" && password === "123") {
+        window.location.href = "HomePageUtente.html";
+      } else {
+        alert("Credenziali non valide. Riprova.");
+      }
+    });
+</script>
+
+
+
+</body></html>

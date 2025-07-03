@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Supporto Medico</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        body {
+        font-family: 'Roboto', sans-serif;
+        }
+        .slider-container {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        }
+        .slider-item {
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        }
+        body {
+        min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+        min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+    <body class="bg-gray-50">
+        <div class="container mx-auto max-w-md h-screen flex flex-col p-4">
+            <header class="flex justify-between items-center mb-6">
+                <div>
+                    <h1 class="text-xl font-medium text-gray-700">Buongiorno, Nello Valentino</h1>
+                    <p class="text-sm text-gray-500">Benvenuto nel tuo piano giornaliero.</p>
+                </div>
+                <button class="p-2 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+                    <span class="material-icons text-gray-600">
+                        account_circle
+                    </span>
+                </button>
+            </header>
+            <main class="flex-grow flex flex-col">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">Piano Giornaliero</h2>
+                <div class="slider-container mb-6 rounded-lg shadow-md" id="drugSlider">
+                    <div class="slider-item w-full flex-shrink-0 p-4 bg-white rounded-lg">
+                        <div class="w-full h-64 bg-gray-200 rounded-md mb-4 flex items-center justify-center">
+                            <img alt="Foto farmaco 1" class="object-contain h-full w-full rounded-md" src="naproxene.jpg"/>
+                        </div>
+                        <h3 class="text-md font-medium text-gray-900">Naproxene</h3>
+                        <p class="text-sm text-gray-600 mb-4">Dose: 1 compressa</p>
+                        <div class="space-y-3">
+                            <div class="flex space-x-3">
+                                <button class="flex-1 bg-green-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors">
+                                    Assunto
+                                </button>
+                                <button class="flex-1 bg-yellow-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors">
+                                    Saltato
+                                </button>
+                            </div>
+                            <button onclick="window.location.href='InfoAggiuntive.html'" class="w-full bg-blue-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                                Info Aggiuntive
+                            </button>
+                            <button class="w-full bg-teal-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-colors">
+                                Contatta il Medico
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider-item w-full flex-shrink-0 p-4 bg-white rounded-lg">
+                        <div class="w-full h-64 bg-gray-200 rounded-md mb-4 flex items-center justify-center">
+                            <img alt="Foto farmaco 2" class="object-contain h-full w-full rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDelNdSWhmVXXMez2srUeqkRuYo7WJHjCUWVg6cHatQLaAcX6MW6e0fGy84V4LyOpRDjSs_Nchdqi5SxLEbEP7MFm8fb7zBvvg-F24sWlV_SwC30j_X9VUPsKvX2feF_NY0oFq0qFofp0sFUnJQazjzL6DJoImsFdWYvz-0QQKSblJOSF2u27AKmEQLI7FL5OjsWLRlGWryVNK7xU0mrkAq6Hf0U0CByyBKczx-66PKT5nzujHJ8kYHLkaH7Mu3W9ymzpa1187fcoA"/>
+                        </div>
+                        <h3 class="text-md font-medium text-gray-900">Nome Farmaco 2</h3>
+                        <p class="text-sm text-gray-600 mb-4">Dose: 2 gocce</p>
+                        <div class="space-y-3">
+                            <div class="flex space-x-3">
+                                <button class="flex-1 bg-green-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors">
+                                    Assunto
+                                </button>
+                                <button class="flex-1 bg-yellow-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors">
+                                    Saltato
+                                </button>
+                            </div>
+                            <button class="w-full bg-blue-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                                Info Aggiuntive
+                            </button>
+                            <button class="w-full bg-teal-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-colors">
+                                Contatta il Medico
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider-item w-full flex-shrink-0 p-4 bg-white rounded-lg">
+                        <div class="w-full h-64 bg-gray-200 rounded-md mb-4 flex items-center justify-center">
+                            <img alt="Foto farmaco 3" class="object-contain h-full w-full rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_6BVs-huUAp4bOvmCrEk79Y-POW81WXdhCop_EqbIdV1BQqs6oomb6CtKrH4SmrXz0pP2vl-rynDowj6xstQ6FJRWe2qlqjGaHHlR52tHlSy4o7BRzz4Ip02IvOr0QBFZkNhdmFlQLhG_cT59Bb-hzZ03kCrr0A6ZcEfqz8knqqOs6FdC76pq6zlGfR2I1S8zIpCXmuIJlYB7aynbqRx0itx-_fXnt1jQ-AonlRJwwbB54gy_HZ5b0bcBZgehNJPxNaJDLKbxxnM"/>
+                        </div>
+                        <h3 class="text-md font-medium text-gray-900">Nome Farmaco 3</h3>
+                        <p class="text-sm text-gray-600 mb-4">Dose: 5 ml</p>
+                        <div class="space-y-3">
+                            <div class="flex space-x-3">
+                                <button class="flex-1 bg-green-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors">
+                                    Assunto
+                                </button>
+                                <button class="flex-1 bg-yellow-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors">
+                                    Saltato
+                                </button>
+                            </div>
+                            <button class="w-full bg-blue-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                                Info Aggiuntive
+                            </button>
+                            <button class="w-full bg-teal-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-colors">
+                                Contatta il Medico
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+                    <h3 class="text-md font-medium text-gray-900 mb-3">Riepilogo Settimanale</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                                <tr>
+                                    <th class="px-3 py-2 font-medium" scope="col">Farmaco</th>
+                                    <th class="px-2 py-2 text-center font-medium" scope="col">L</th>
+                                    <th class="px-2 py-2 text-center font-medium" scope="col">M</th>
+                                    <th class="px-2 py-2 text-center font-medium" scope="col">M</th>
+                                    <th class="px-2 py-2 text-center font-medium" scope="col">G</th>
+                                    <th class="px-2 py-2 text-center font-medium" scope="col">V</th>
+                                    <th class="px-2 py-2 text-center font-medium" scope="col">S</th>
+                                    <th class="px-2 py-2 text-center font-medium" scope="col">D</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b">
+                                    <td class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap">Naproxene</td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                    <td class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap">Lasonil</td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                    <td class="px-2 py-2 text-center">
+                                        <span class="material-icons text-gray-400 text-base">radio_button_unchecked</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-white text-sm font-medium px-4 py-2 rounded-lg shadow-lg hidden z-50">
+            Assunzione registrata!
+        </div>
+
+
+        <script>
+            // Mostra il toast
+            function showToast(message) {
+              const toast = document.getElementById('toast');
+              toast.textContent = message;
+              toast.classList.remove('hidden');
+
+              setTimeout(() => {
+                toast.classList.add('hidden');
+              }, 3000);
+            }
+
+            // Gestisci il click sui pulsanti "Assunto"
+            document.querySelectorAll('button').forEach(button => {
+              if (button.textContent.trim() === 'Assunto') {
+                button.addEventListener('click', () => {
+                  showToast('Assunzione registrata!');
+
+                  // Trova la prima icona non selezionata nella tabella e sostituiscila
+                  const unchecked = document.querySelector('table .material-icons.text-gray-400');
+                  if (unchecked) {
+                    unchecked.textContent = 'check_circle';
+                    unchecked.classList.remove('text-gray-400');
+                    unchecked.classList.add('text-green-500');
+                  }
+                });
+              }
+            });
+        </script>
+
+    </body></html>
