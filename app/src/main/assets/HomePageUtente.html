@@ -37,7 +37,7 @@
                     <h1 class="text-xl font-medium text-gray-700">Buongiorno, Nello Valentino</h1>
                     <p class="text-sm text-gray-500">Benvenuto nel tuo piano giornaliero.</p>
                 </div>
-                <button class="p-2 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+                <button onclick="window.location.href='ProfiloUtente.html'" class="p-2 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
                     <span class="material-icons text-gray-600">
                         account_circle
                     </span>
@@ -64,8 +64,11 @@
                             <button onclick="window.location.href='InfoAggiuntive.html'" class="w-full bg-blue-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
                                 Info Aggiuntive
                             </button>
-                            <button class="w-full bg-teal-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-colors">
+                            <button onclick="window.location.href='Chat.html'" class="w-full bg-teal-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-colors">
                                 Contatta il Medico
+                            </button>
+                            <button onclick="window.location.href='ChatIA.html'"class="w-full bg-teal-500 text-white py-3 px-4 rounded-lg text-sm font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-colors">
+                                Chatta con MemoMed IA
                             </button>
                         </div>
                     </div>
@@ -218,6 +221,22 @@
                     unchecked.textContent = 'check_circle';
                     unchecked.classList.remove('text-gray-400');
                     unchecked.classList.add('text-green-500');
+                  }
+                });
+              }
+            });
+
+            document.querySelectorAll('button').forEach(button => {
+              if (button.textContent.trim() === 'Saltato') {
+                button.addEventListener('click', () => {
+                  showToast('Assunzione Saltata!');
+
+                  // Trova la prima icona non selezionata nella tabella e sostituiscila
+                  const unchecked = document.querySelector('table .material-icons.text-gray-400');
+                  if (unchecked) {
+                    unchecked.textContent = 'cancel';
+                    unchecked.classList.remove('text-gray-400');
+                    unchecked.classList.add('text-red-500');
                   }
                 });
               }

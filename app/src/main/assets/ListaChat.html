@@ -1,0 +1,227 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <header class="px-4 pt-4 pb-2">
+    <!-- Titolo in alto -->
+    <div class="flex justify-between items-center mb-2">
+        <span class="text-xl font-bold text-gray-800">          Lista Chat</span>
+        <div class="flex items-center space-x-2">
+            <!-- Altri elementi come pulsanti o icone, se previsti -->
+        </div>
+    </div>
+
+    <!-- NavBar su una riga separata -->
+    <nav class="flex justify-around border-b border-gray-200">
+        <a class="nav-item active py-3 px-2 text-sm" href="HomePageMedico.html">Home</a>
+        <a class="nav-item py-3 px-2 text-sm" href="ListaPazienti.html">Lista Pazienti</a>
+        <a class="nav-item py-3 px-2 text-sm" href="ListaChat.html">Chat</a>
+        <a class="nav-item py-3 px-2 text-sm" href="ChatIAMedico.html">IA</a>
+    </nav>
+</header>
+
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-gray-50 justify-between group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+
+        <div class="px-4 py-3">
+            <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                    <div
+                            class="text-[#5c7d8a] flex border-none bg-[#eaeff1] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                            data-icon="MagnifyingGlass"
+                            data-size="24px"
+                            data-weight="regular"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                        </svg>
+                    </div>
+                    <input
+                            placeholder="Cerca Paziente"
+                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#101618] focus:outline-0 focus:ring-0 border-none bg-[#eaeff1] focus:border-none h-full placeholder:text-[#5c7d8a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                            value=""
+                    />
+                </div>
+            </label>
+        </div>
+    <a href="ChatMedico.html" class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between no-underline">
+        <div class="flex items-center gap-4">
+            <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwp0T4OzeE_GIxqdh1pj7hKpjb5qEftDolQRWkOMnO8xWly6ZAjFncYGiZtLLy1e2luAsBk-2ao9iLw0rTbHv7ecuZCEqZBTmejvXTOK59ypcKtNkfsOzqluzvD3TVfcNmnHmLBG6RgUBgtCBCfTHJQrk7XTPR7b4dQunI9I31v3LRb13b-TyKtHJ51fc2szaoy4mXU2dsHHTU_2avDAXMvYmGK-3MhrhIzth8q9tdS380uTXrQknCSqRsUI-ldZLDEc2bOt7sLVpV");'
+            ></div>
+            <div class="flex flex-col justify-center">
+                <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Nello Valentino</p>
+                <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+            </div>
+        </div>
+        <div class="shrink-0">
+            <div class="flex size-7 items-center justify-center">
+                <div class="size-3 rounded-full bg-[#007bff]"></div>
+            </div>
+        </div>
+    </a>
+
+    <div class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+                <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGelyV9r0AS17qYZwt2yjiDd-p7wmUZmVJwEQWsOsoL0V8mOx7AuBkTERa74zHi0-K0_Q8W3chAyQX2I0aJhi6TcRbmHOh0wKSGuYLUTe0QzORf0bzwd33UkLau37Kd7glVM_3hECAIPXa0aQyj1FClsDI5ZDHVICXevxYboJNpI6PF5N8ct9Sqot3btt9kZiAH-yemMAtk7-7_S--gJfZUM4mZC-cMZoqKN1olrDXrqHND3o-_4eD8sVJBf5wBG9lOgrblU1N9-y3");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Paziente 2</p>
+                    <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#007bff]"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+                <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1IG2Url_bi5Ae2s7MI7nkO0256bHQNwfeQ0UEB5C0wDfR9TeS3DuiuGs4L8qMi-Hr6k3EWRG4IBPCgsCtVIYycNd7GBDBhetQhpG5EkzfyBrlZ3US8pdpPp4NyZKbqH77sijxR3CW-6dEyp0pZmjl1Gigt0xAYUa1RP3CivJ4m37X26Qox7ajBUBPxnny3FH_n2Mn5Di_t9GodMsLoUyIMU956vU89w8ma3MwOZLUyvvviACqwpokTBcnILb-ofJP4JTQ4qMqwuyc");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Paziente 3</p>
+                    <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#007bff]"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+                <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDu6JCYmAz4yy32EWT_H4nqEs0lLWoCS-5ZTHMO_xYnJ5j6jDWUSrdaTYq62noLMOfTpsoeeGCO7F-5eaSupiiHpirnMm5aV10_Oqkimd_x8mtMGZLh2ZXA9zH9YVGreE33BxFrKgu-w1OBVssMB_ePEw5BlYxd3otdTW8OKjCGXTpsQUexj9xKZ02yzKXMq8d5jE2O92FryqZKAD3X62aNt-syG9l9_XqpjBgRzhfmpofZPIkYm8XE8kGyNRchT920gO4THrARojFj");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Paziente 4</p>
+                    <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#007bff]"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+                <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAW0Qsoiy7MZ2HGB1cWf2rE001gt7APd65QNA3eHYR90Ezm9JMf37smy4VflaHnQmns1jG-3_pjpd-YM2tVeFfM1b0_z7oztqxm3-n3PlMU-5pRxw9lzxfv0zf2YNtvxKgafmjHxgCzuJxTmSeyhkbEUlNnYXN9R2m5gfC-FuHAppIsiyJTseKFYFzhD-4wJpwljCSAuHBNooVmkKN-q-1x9BbUgtTQQM_UT7gBWLxBGRHR7dXLhbK8rHRz8TNmcJTIb9shOkWI2kmM");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Paziente 5</p>
+                    <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#007bff]"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+                <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_tvfk6bEUH0f58KtMYvLQmICISfit8lll4YOQVyOTkfeD9ftOWTk0ycjuRh_Z29vt0rq86CKFKhZDz1rI55zScJs_WmgmZ2UhSflx3SP6jhd574jJ1SPJ_nFsqR7QWKmSfg62xFXS7w9kQDO9SRxFhaclxSVA7xxsoiqzmFSjS-gO8qXp-bSHsEs4O5fsWpuPrrV93is-hiaS8hBtCl7QO-ZOsXF_rvQBK7g1B_Fsv_isBuV7oqzyyEo7Br7npGC-cM7-JiDzb4OG");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Paziente 6</p>
+                    <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#007bff]"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+                <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0QR_i0_sfKxvFow3xVEdJSWxfEDYIMM4KNV7juod6UXjghb7qAM8G2cEIQk9rBJL7n304SK4Q0oYcDgjBr24VfrxqatSGfXQFHfZrXTgrR0Eew2QBWj3nI6y8tGoG7eFzGQwVtQGWfPkvgQGMY6vkFkqlotPlGvLmBe0ebsEhM5p2ITYahcT93gEFvGoSAWJM0zxLPWLrBjiHSP_m_Z1nsdsD_UdNOIp2xBwryrzAqpVjQWmXaYPtTASGgprKk1DF826dsw36bGAW");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Paziente 7</p>
+                    <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#007bff]"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 bg-gray-50 px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+                <div
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkJzhRxGjEnaZ1Wu0KFKZkZFuPPavHYB1tQ6kK61XSpTB36N5JaodiMWOOl_QPNPgvlktDC0Z1SVA5-dh3CgNFRVMPbyTl0X9GTebtgRH2JUcMd-m8N0wgKgwVu3VnSRVlkM6AlFGl3pvVsL4JiKeQ68svABDBIsxD-oc9eS7QuC46QkjeFeI2u0j87I1-I74Huhq0pBNBwywcursdbLyJtYbtvMoxjmiCcut78Do6XxlFTFolGj4ThnAySkMTDQZ1HQz2--wx8PaW");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-[#101618] text-base font-medium leading-normal line-clamp-1">Paziente 8</p>
+                    <p class="text-[#5c7d8a] text-sm font-normal leading-normal line-clamp-2"></p>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="flex size-7 items-center justify-center"><div class="size-3 rounded-full bg-[#007bff]"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="flex gap-2 border-t border-[#eaeff1] bg-gray-50 px-4 pb-3 pt-2">
+            <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#101618]" href="#">
+                <div class="text-[#101618] flex h-8 items-center justify-center" data-icon="Users" data-size="24px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                                d="M164.47,195.63a8,8,0,0,1-6.7,12.37H10.23a8,8,0,0,1-6.7-12.37,95.83,95.83,0,0,1,47.22-37.71,60,60,0,1,1,66.5,0A95.83,95.83,0,0,1,164.47,195.63Zm87.91-.15a95.87,95.87,0,0,0-47.13-37.56A60,60,0,0,0,144.7,54.59a4,4,0,0,0-1.33,6A75.83,75.83,0,0,1,147,150.53a4,4,0,0,0,1.07,5.53,112.32,112.32,0,0,1,29.85,30.83,23.92,23.92,0,0,1,3.65,16.47,4,4,0,0,0,3.95,4.64h60.3a8,8,0,0,0,7.73-5.93A8.22,8.22,0,0,0,252.38,195.48Z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="text-[#101618] text-xs font-medium leading-normal tracking-[0.015em]">Patients</p>
+            </a>
+            <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#5c7d8a]" href="#">
+                <div class="text-[#5c7d8a] flex h-8 items-center justify-center" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                                d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="text-[#5c7d8a] text-xs font-medium leading-normal tracking-[0.015em]">Messages</p>
+            </a>
+            <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#5c7d8a]" href="#">
+                <div class="text-[#5c7d8a] flex h-8 items-center justify-center" data-icon="User" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                                d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="text-[#5c7d8a] text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+            </a>
+        </div>
+        <div class="h-5 bg-gray-50"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Profilo Utente</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        :root {
+          --primary-500: #3B82F6;--primary-100: #DBEAFE;--primary-50: #EFF6FF;--neutral-900: #111827;--neutral-700: #374151;--neutral-500: #6B7280;--neutral-300: #D1D5DB;--neutral-100: #F3F4F6;--neutral-0: #FFFFFF;}
+        body {
+          font-family: 'Inter', sans-serif;
+          background-color: var(--neutral-100);
+        }
+        .profile-image-container {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background-color: var(--primary-100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 3px solid var(--primary-500);
+          position: relative;
+          overflow: hidden;}
+        .profile-image-placeholder-icon {
+          font-size: 60px;
+          color: var(--primary-500);
+        }
+        .profile-name {
+          font-size: 1.5rem;font-weight: 700;
+          color: var(--neutral-900);
+        }
+        .profile-dob {
+          font-size: 0.875rem;color: var(--neutral-500);
+        }
+        .section-card {
+          background-color: var(--neutral-0);
+          border-radius: 1rem;padding: 1.5rem;box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+          margin-top: 2rem;}
+        .section-title {
+          font-size: 1.125rem;font-weight: 600;
+          color: var(--neutral-900);
+          margin-bottom: 1rem;display: flex;
+          align-items: center;
+        }
+        .section-title .material-icons-outlined {
+            margin-right: 0.5rem;color: var(--primary-500);
+        }
+        .info-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.75rem 0;border-bottom: 1px solid var(--neutral-300);
+        }
+        .info-item:last-child {
+          border-bottom: none;
+        }
+        .info-label {
+          font-size: 0.875rem;color: var(--neutral-700);
+          font-weight: 500;
+        }
+        .info-value {
+          font-size: 0.875rem;color: var(--neutral-500);
+          text-align: right;
+        }
+        .toggle-switch {
+          width: 44px;height: 24px;
+          background-color: var(--neutral-300);
+          border-radius: 9999px;
+          padding: 2px;
+          cursor: pointer;
+          transition: background-color 0.2s ease-in-out;
+        }
+        .toggle-switch.active {
+          background-color: var(--primary-500);
+        }
+        .toggle-knob {
+          width: 20px;
+          height: 20px;
+          background-color: var(--neutral-0);
+          border-radius: 50%;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+          transition: transform 0.2s ease-in-out;
+        }
+        .toggle-switch.active .toggle-knob {
+          transform: translateX(20px);
+        }
+        .font-size-selector button {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+          font-weight: 500;
+        }
+        .font-size-selector button.active {
+          background-color: var(--primary-500);
+          color: var(--neutral-0);
+        }
+        .font-size-selector button:not(.active) {
+          background-color: var(--primary-50);
+          color: var(--primary-500);
+        }
+        .header-icon {
+            color: var(--primary-500);
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-neutral-100">
+<div class="container mx-auto max-w-sm p-4 min-h-screen flex flex-col">
+    <header class="flex items-center justify-between py-4">
+        <button onclick="window.location.href='ProfiloUtente.html'" class="p-2 rounded-full hover:bg-primary-50 transition-colors">
+            <span class="material-icons-outlined header-icon">arrow_back_ios_new</span>
+        </button>
+        <h1 class="text-xl font-semibold text-neutral-900">Profilo Utente</h1>
+        <button class="p-2 rounded-full hover:bg-primary-50 transition-colors">
+            <span class="material-icons-outlined header-icon">edit</span>
+        </button>
+    </header>
+    <section class="mt-6 flex flex-col items-center text-center">
+        <div class="profile-image-container mb-4">
+            <span class="material-icons-outlined profile-image-placeholder-icon">person</span>
+        </div>
+        <p class="profile-name">Nello Valentino</p>
+        <p class="profile-dob">Nato il: 01/01/1980</p>
+    </section>
+    <section class="section-card">
+        <h2 class="section-title">
+            <span class="material-icons-outlined">medical_services</span>
+            Informazioni Mediche
+        </h2>
+        <div class="space-y-1">
+            <div class="info-item">
+                <span class="info-label">Medico Curante</span>
+                <span class="info-value">Dott. Bianchi</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Inizio Terapia</span>
+                <span class="info-value">15/06/2023</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Fine Prevista Terapia</span>
+                <span class="info-value">15/12/2023</span>
+            </div>
+        </div>
+    </section>
+    <section class="section-card">
+        <h2 class="section-title">
+            <span class="material-icons-outlined">settings</span>
+            Impostazioni Account
+        </h2>
+        <div class="space-y-1">
+            <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-value">medico@gmail.com</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Notifiche Push</span>
+                <div class="toggle-switch active">
+                    <div class="toggle-knob"></div>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Dimensione Testo</span>
+                <div class="flex items-center space-x-2 font-size-selector">
+                    <button class="text-xs">A</button>
+                    <button class="text-sm active">A</button>
+                    <button class="text-base">A</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-card">
+        <h2 class="section-title">
+            <span class="material-icons-outlined">description</span>
+            Documenti
+        </h2>
+        <div class="space-y-1">
+            <button class="w-full info-item text-left hover:bg-primary-50 rounded-md transition-colors duration-150">
+                <span class="info-label text-primary-500 font-medium">Cartella Clinica</span>
+                <span class="material-icons-outlined text-neutral-500">chevron_right</span>
+            </button>
+            <button class="w-full info-item text-left hover:bg-primary-50 rounded-md transition-colors duration-150">
+                <span class="info-label text-primary-500 font-medium">Prescrizioni Recenti</span>
+                <span class="material-icons-outlined text-neutral-500">chevron_right</span>
+            </button>
+        </div>
+    </section>
+    <div class="mt-auto pt-8 pb-4 text-center">
+        <button class="w-full max-w-xs mx-auto bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition-colors duration-150 flex items-center justify-center space-x-2">
+            <span class="material-icons-outlined">logout</span>
+            <span>Esci</span>
+        </button>
+    </div>
+</div>
+
+</body></html>

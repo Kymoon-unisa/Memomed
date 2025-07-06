@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Home Medico</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        body {
+                font-family: 'Roboto', sans-serif;
+                min-height: max(884px, 100dvh);
+            }
+            .icon-blue {
+                color: #2563EB;
+            }
+            .bg-sky-gradient {
+                background: linear-gradient(180deg, #E0F2FE 0%, #BAE6FD 100%);
+            }
+            .nav-item.active {
+                border-bottom: 2px solid #2563EB;
+                color: #2563EB;
+                font-weight: 500;
+            }
+            .nav-item {
+                color: #6B7280;
+            }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-sky-gradient">
+<div class="w-full min-h-screen bg-white shadow-lg">
+
+    <header class="px-4 pt-4 pb-2">
+        <div class="flex justify-between items-center mb-4">
+            <span class="text-xl font-bold text-gray-800">HomeMedico</span>
+            <div class="flex items-center space-x-2">
+                <span class="material-icons text-gray-500">wifi</span>
+                <span class="text-sm text-gray-500">9:41</span>
+                <span class="material-icons text-gray-500">battery_full</span>
+            </div>
+        </div>
+        <nav class="flex justify-around border-b border-gray-200">
+            <a class="nav-item active py-3 px-2 text-sm" href="HomePageMedico.html">Home</a>
+            <a class="nav-item py-3 px-2 text-sm" href="ListaPazienti.html">Lista Pazienti</a>
+            <a class="nav-item py-3 px-2 text-sm" href="ListaChat.html">Chat</a>
+            <a class="nav-item py-3 px-2 text-sm" href="ChatIAMedico.html">IA</a>
+        </nav>
+    </header>
+    <main class="p-4 pb-16">
+        <section class="flex items-center mb-6">
+            <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-blue-500 mr-4 flex-shrink-0">
+                <img alt="Foto Profilo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh7e4K0uFJLjgPnsZR3misvg0V5p36JSQ_G8ZKhr3kSV-q1KqpbsHktI3UpwlrfUaTz3Io6IUiHpqeVp1Pm9rxPu4OEAhudOZLstSC8n20d9rHI56Kuq--E22L-PDtTOB_8kDHIB8_p_7mbtiyvXdisqZ5PrmsjkpDx_vDbU1oEdDaartswg8uPct-cCHplw-GY98rEkceg5VulcFXkVz23t5kNzXM-k9tHWfvB85Dw1OORp4Thcnau1QMB4kI3hpniNaxOQh-NfQV"/>
+            </div>
+            <div>
+                <h2 class="text-xl font-semibold text-gray-800">Nome Dottore</h2>
+                <p class="text-sm text-gray-600">Ruolo: Medico Specialista</p>
+                <p class="text-sm text-gray-600">Email: nome.dottore@example.com</p>
+                <p class="text-sm text-gray-600">Posizione di Lavoro: Ospedale Centrale</p>
+            </div>
+        </section>
+        <section class="bg-blue-50 rounded-lg p-4 mb-6 shadow">
+            <div class="flex justify-between">
+                <div class="text-center">
+                    <p class="text-sm text-blue-700">Pazienti</p>
+                    <p class="text-2xl font-bold text-blue-600">128</p>
+                </div>
+                <div class="border-l border-blue-200"></div>
+                <div class="text-center">
+                    <p class="text-sm text-blue-700">Avvisi</p>
+                    <p class="text-2xl font-bold text-red-500">5</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white rounded-lg p-4 shadow">
+            <h3 class="text-lg font-semibold text-gray-700 mb-4">Notifiche</h3>
+            <div class="space-y-3">
+                <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-3 rounded-md flex items-start">
+                    <span class="material-icons mr-2 text-green-500">check_circle</span>
+                    <div>
+                        <p class="font-medium">Marco ha assunto correttamente i medicinali giornalieri</p>
+                        <p class="text-xs text-gray-500">2 ore fa</p>
+                    </div>
+                </div>
+                <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-3 rounded-md flex items-start">
+                    <span class="material-icons mr-2 text-red-500">error</span>
+                    <div>
+                        <p class="font-medium">Laura ha Saltato: Cordarone 1 pillola ore 9:00 !</p>
+                        <p class="text-xs text-gray-500">3 ore fa</p>
+                    </div>
+                </div>
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-3 rounded-md flex items-start">
+                    <span class="material-icons mr-2 text-yellow-500">warning</span>
+                    <div>
+                        <p class="font-medium">Nuovo paziente assegnato: Mario Rossi</p>
+                        <p class="text-xs text-gray-500">1 giorno fa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Aggiungi Farmaco</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E0F2FE;}
+        .popup-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body>
+<div class="popup-overlay fixed inset-0 flex items-center justify-center p-4">
+    <div class="bg-sky-50 rounded-xl shadow-2xl w-full max-w-md transform transition-all">
+        <div class="p-6 space-y-6">
+            <div class="flex justify-between items-center">
+                <h2 class="text-2xl font-semibold text-sky-700">Aggiungi Farmaco</h2>
+                <button onclick="window.location.href='ProfiloPaziente.html'" class="text-sky-500 hover:text-sky-700">
+                    <span class="material-icons-outlined">close</span>
+                </button>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-sky-600 mb-1" for="drugName">Nome farmaco</label>
+                <div class="relative">
+                    <span class="material-icons-outlined absolute left-3 top-1/2 transform -translate-y-1/2 text-sky-400">medication</span>
+                    <input class="w-full pl-10 pr-3 py-2.5 border border-sky-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 placeholder-sky-400 text-sky-700 bg-white shadow-sm" id="drugName" name="drugName" placeholder="Es. Paracetamolo" type="text"/>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-sky-600 mb-1" for="dosage">Dosaggio</label>
+                    <div class="relative">
+                        <span class="material-icons-outlined absolute left-3 top-1/2 transform -translate-y-1/2 text-sky-400">scale</span>
+                        <input class="w-full pl-10 pr-3 py-2.5 border border-sky-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 placeholder-sky-400 text-sky-700 bg-white shadow-sm" id="dosage" name="dosage" placeholder="Es. 500mg" type="text"/>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-sky-600 mb-1" for="frequency">Frequenza</label>
+                    <div class="relative">
+                        <span class="material-icons-outlined absolute left-3 top-1/2 transform -translate-y-1/2 text-sky-400">schedule</span>
+                        <input class="w-full pl-10 pr-3 py-2.5 border border-sky-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 placeholder-sky-400 text-sky-700 bg-white shadow-sm" id="frequency" name="frequency" placeholder="Es. 2 volte al giorno" type="text"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-sky-600 mb-1" for="notes">Note</label>
+                <div class="relative">
+                    <span class="material-icons-outlined absolute left-3 top-3 text-sky-400">sticky_note_2</span>
+                    <textarea class="w-full pl-10 pr-3 py-2.5 border border-sky-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500 placeholder-sky-400 text-sky-700 bg-white shadow-sm" id="notes" name="notes" placeholder="Aggiungi eventuali note..." rows="4"></textarea>
+                </div>
+            </div>
+            <div class="flex flex-col pt-2">
+                <div class="flex flex-col sm:flex-row sm:justify-end space-y-3 sm:space-y-0 sm:space-x-3">
+                    <button onclick="window.location.href='ProfiloPaziente.html'" class="w-full sm:w-auto px-6 py-3 text-sm font-medium text-sky-700 bg-sky-200 hover:bg-sky-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-colors" type="button">
+                        Annulla
+                    </button>
+                    <button onclick="window.location.href='ProfiloPaziente.html'" class="w-full sm:w-auto px-6 py-3 text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-colors flex items-center justify-center" type="submit">
+                        <span class="material-icons-outlined mr-2">add_circle_outline</span>
+                        Aggiungi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body></html>
